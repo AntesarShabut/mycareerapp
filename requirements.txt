@@ -15,7 +15,7 @@ kiwisolver==1.1.0
 MarkupSafe==1.1.1
 matplotlib==3.0.3
 networkx==2.4
-numpy==1.18.1
+numpy==1.18.0
 protobuf==3.11.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8

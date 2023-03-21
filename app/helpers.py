@@ -3,25 +3,26 @@ import json
 
 def get_soft_skills_data():
     # TODO: don't handle data like this
-    with open("data/wordlists.json", "r") as infile:
+    with open("app/data/wordlists.json", "r") as infile:
         data = json.load(infile)
+        print("data")
     return data["soft_skills"]
 
 def get_roles_data():
     # TODO: don't handle data like this
-    with open("data/roles.json", "r") as infile:
+    with open("app/data/roles.json", "r") as infile:
         data = json.load(infile)
     return data
 
 def get_jobs_data():
     # TODO: don't handle data like this
-    with open("data/jobs_and_skills.json", "r") as infile:
+    with open("app/data/jobs_and_skills.json", "r") as infile:
         data = json.load(infile)
     return data
 
 def get_users_array():
     # TODO: this is just for testing
-    with open('data/users.json', 'r') as infile:
+    with open('app/data/users.json', 'r') as infile:
         users_array = json.load(infile)
     return users_array
 

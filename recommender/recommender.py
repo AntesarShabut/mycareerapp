@@ -1,5 +1,5 @@
 import networkx as nx
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import json
 import operator
 from app.helpers import get_jobs_data, get_users_array 
@@ -9,7 +9,7 @@ from app.helpers import get_jobs_data, get_users_array
 # Condider alternative data model/handling
 
 def load_wordlists():
-    with open('data/wordlists.json', 'r') as infile:
+    with open('app/data/wordlists.json', 'r') as infile:
         wordlists = json.load(infile)
     return wordlists
 

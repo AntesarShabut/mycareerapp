@@ -4,7 +4,7 @@ from wtforms.fields.html5 import IntegerRangeField
 from .forms import SkillsForm
 from .helpers import get_soft_skills_data, format_anon_user, get_role, format_skills
 import recommender.recommender as rc
-import serpstack as ss
+#import serpstack as ss
 #from app import mongo
 
 @app.route('/')
@@ -28,7 +28,7 @@ def skills_profile():
     class F(SkillsForm):
         pass
     for skill in soft_skills_data:
-        setattr(F, skill["term"], IntegerRangeField(skill["descriptor"], 
+        setattr(F, skill["term"], IntegerRangeField(skill["label"], 
             default=0) )
     form = F(username='anonymous')
     if request.method == 'POST' and form.validate():
